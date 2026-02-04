@@ -27,3 +27,14 @@ Se você quiser testar este sistema na sua máquina, siga os passos abaixo:
 1. **Clone o repositório:**
    ```bash
    git clone https://github.com/pedrobittencourtdev/sistema-biblioteca-c.git
+
+2. **Entre no terminal e na pasta:**
+   ```bash
+   cd sistema-biblioteca-c
+3. **Compile o código:**
+   ```bash
+   gcc cadastroLivros.c -o sistema
+4. **Execute:**
+   ```bash
+   ./sistema
+   
