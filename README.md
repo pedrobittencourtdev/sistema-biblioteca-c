@@ -19,3 +19,11 @@ O projeto foi criado para consolidar conceitos fundamentais da programação est
 ## 💻 Como executar:
 
 - Para rodar este projeto, você precisará de um compilador de C (GCC, Clang ou o próprio VS Code configurado).
+
+ ## 📥 Como baixar e testar o projeto
+
+Se você quiser testar este sistema na sua máquina, siga os passos abaixo:
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/pedrobittencourtdev/sistema-biblioteca-c.git
