@@ -2,19 +2,22 @@
 
 Este é um projeto desenvolvido em **Linguagem C** para o gerenciamento simplificado de um acervo de livros. O sistema permite o cadastro e a listagem de obras através de uma interface via terminal.
 
-## 🚀 Objetivo
+## 🚀 Novidades da Última Atualização (Refatoração)
 
-O projeto foi criado para consolidar conceitos fundamentais da programação estruturada, tais como:
-* Manipulação de **Structs** para modelagem de dados complexos.
-* Controle de fluxo com laços `do-while` e estruturas `switch-case`.
-* Gerenciamento de entrada/saída e tratamento de **buffer de teclado**.
-* Uso de funções da biblioteca `string.h` (como `strcspn` para limpeza de strings).
+O código fonte foi recentemente refatorado para abandonar os *arrays* estáticos simples e implementar conceitos fundamentais e mais avançados de programação em C:
 
-## 🛠️ Funcionalidades
+* **Estruturas de Dados (`struct`):** Criação de modelos dedicados para `Livro` e `Emprestimo`, tornando o código muito mais organizado, legível e orientado a entidades.
+* **Ponteiros:** Utilização de ponteiros para uma manipulação mais direta e eficiente dos dados em memória.
+* **Alocação Dinâmica de Memória:** * Uso de `calloc` para alocar e inicializar automaticamente a zeros o espaço do catálogo da biblioteca.
+    * Uso de `malloc` para dimensionar a matriz de empréstimos na memória.
+* **Gestão Segura de Recursos:** Implementação da função `free()` no encerramento do programa para garantir a devolução da memória ao sistema operativo, evitando vazamentos de memória (*memory leaks*).
 
-- **Cadastrar Livro:** Registra nome, autor, editora e edição.
-- **Listar Acervo:** Exibe todos os livros armazenados na memória durante a execução.
-- **Tratamento de Dados:** Limpeza automática de buffer para evitar erros de leitura.
+## ⚙️ Funcionalidades
+
+* **Registar novo livro:** Adiciona livros com título, autor, editora, edição e define automaticamente o estado inicial como "disponível".
+* **Listar todos os livros:** Exibe o catálogo completo registado no sistema.
+* **Realizar empréstimo:** Verifica a disponibilidade e permite associar um livro a um utilizador específico.
+* **Listar empréstimos:** Mostra o histórico de livros atualmente requisitados e o nome dos respetivos utilizadores.
 
 ## 💻 Como executar:
 
