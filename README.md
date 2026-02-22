@@ -1,6 +1,6 @@
 # Sistema de Gerenciamento de Biblioteca 📚
 
-Este é um projeto desenvolvido em **Linguagem C** para o gerenciamento simplificado de um acervo de livros. O sistema permite o cadastro e a listagem de obras através de uma interface via terminal.
+Este é um projeto desenvolvido em **Linguagem C** para o gerenciamento simplificado de um acervo de livros. O sistema permite o cadastro, a listagem, empréstimos e listagem de empréstimos das obras, através de uma interface via terminal.
 
 ## 🚀 Novidades da Última Atualização (Refatoração)
 
@@ -11,6 +11,7 @@ O código fonte foi recentemente refatorado para abandonar os *arrays* estático
 * **Alocação Dinâmica de Memória:** * Uso de `calloc` para alocar e inicializar automaticamente a zeros o espaço do catálogo da biblioteca.
     * Uso de `malloc` para dimensionar a matriz de empréstimos na memória.
 * **Gestão Segura de Recursos:** Implementação da função `free()` no encerramento do programa para garantir a devolução da memória ao sistema operativo, evitando vazamentos de memória (*memory leaks*).
+* **Modolurização:** Modularização do código, com o objetivo de organizar o código para futuras alterações, sem comprometer o progranma.
 
 ## ⚙️ Funcionalidades
 
